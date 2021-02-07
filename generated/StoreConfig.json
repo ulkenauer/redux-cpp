@@ -1,0 +1,30 @@
+{
+  "state": {
+    "name": "AppState",
+    "attributes": [
+      {
+        "name": "description",
+        "type": "std::string"
+      },
+      {
+        "name": "quantity",
+        "type": "int"
+      },
+      {
+        "name": "tag",
+        "type": "std::string"
+      }
+    ]
+  },
+  "actions": [
+    {
+      "action": "ChangeDescriptionAction"
+    }
+  ],
+  "reducers": [
+    {
+      "reducer": "ChangeDescriptionReducer",
+      "action": "ChangeDescriptionAction"
+    }
+  ]
+}

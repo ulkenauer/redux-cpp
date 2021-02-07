@@ -1,0 +1,10 @@
+.idea
+dist
+# *.o
+node_modules
+# ./*/**/cmake_build_debug/
+# ./**/cmake-build-debug/
+cmake-build-debug/
+example/
+/example_*.zip
+/example.zip
