@@ -2,15 +2,12 @@
 #ifndef ChangeDescriptionAction_H
 #define ChangeDescriptionAction_H
 
-#include "../Action.h"
+#include <string>
 
-class ChangeDescriptionAction : public Action {
+class ChangeDescriptionAction {
 public:
-    std::string getActionType() override;
-
     std::string description;
     ChangeDescriptionAction() = default;
-    // TODO: action payload
 };
 
 
