@@ -1,6 +1,6 @@
 #include <iostream>
-#include "actions/ChangeDescriptionAction.h"
-#include "StoreBuilder.h"
+#include "module/actions/ChangeDescriptionAction.h"
+#include "module/generated/StoreBuilder.h"
 #include <string>
 #include <memory>
 

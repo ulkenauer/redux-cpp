@@ -9,8 +9,8 @@
 
 #include <set>
 #include <string>
-#include "../../State.h"
-#include "../ChangeDescriptionReducer.h"
+#include "../State.h"
+#include "../../reducers/ChangeDescriptionReducer.h"
 #include <redux/WrappedReducer.h>
 
 class WrappedReducerFactory {

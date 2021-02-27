@@ -9,8 +9,8 @@
 
 #include <set>
 
-#include "actions/utils/WrappedActionFactory.h"
-#include "reducers/utils/WrappedReducerFactory.h"
+#include "utils/WrappedActionFactory.h"
+#include "utils/WrappedReducerFactory.h"
 #include <redux/ReduxStore.h>
 
 class StoreBuilder {

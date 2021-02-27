@@ -22,7 +22,8 @@ void prepareChangeDescriptionReducer(ReduxStore<State> *store, std::shared_ptr<I
 {
     std::shared_ptr<ChangeDescriptionAction> targetAction = std::static_pointer_cast<ChangeDescriptionAction>(action);
     std::shared_ptr<ChangeDescriptionReducer> targetReducer = std::dynamic_pointer_cast<ChangeDescriptionReducer>(reducer);
-    targetReducer->prepare(store->state, targetAction);
+    targetReducer->state = store->state;
+    targetReducer->action = targetAction;
 }
 
 ReduxStore<State> StoreBuilder::build() {

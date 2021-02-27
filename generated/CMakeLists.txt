@@ -6,10 +6,10 @@ project(example)
 set(CMAKE_CXX_STANDARD 14)
 add_executable(example main.cpp
         export/redux/ReduxStore.h
-actions/ChangeDescriptionAction.h actions/ChangeTagAction.h
-State.cpp State.h export/redux/IReducer.h
-reducers/ChangeDescriptionReducer.cpp reducers/ChangeDescriptionReducer.g.cpp reducers/ChangeDescriptionReducer.h
-        export/redux/ActionMetadata.h export/redux/WrappedAction.h actions/utils/WrappedActionFactory.cpp actions/utils/WrappedActionFactory.h export/redux/ReducerMetadata.h export/redux/WrappedReducer.h reducers/utils/WrappedReducerFactory.cpp reducers/utils/WrappedReducerFactory.h StoreBuilder.cpp StoreBuilder.h)
+        module/actions/ChangeDescriptionAction.h module/actions/ChangeTagAction.h
+        module/generated/State.cpp module/generated/State.h export/redux/IReducer.h
+        module/reducers/ChangeDescriptionReducer.cpp module/reducers/ChangeDescriptionReducer.h
+        export/redux/ActionMetadata.h export/redux/WrappedAction.h module/generated/utils/WrappedActionFactory.cpp module/generated/utils/WrappedActionFactory.h export/redux/ReducerMetadata.h export/redux/WrappedReducer.h module/generated/utils/WrappedReducerFactory.cpp module/generated/utils/WrappedReducerFactory.h module/generated/StoreBuilder.cpp module/generated/StoreBuilder.h)
 
 #FetchContent_Declare(
 #        testrepo

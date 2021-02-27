@@ -7,7 +7,7 @@
 #ifndef EXAMPLE_WRAPPEDACTIONFACTORY_H
 #define EXAMPLE_WRAPPEDACTIONFACTORY_H
 
-#include "../ChangeDescriptionAction.h"
+#include "../../actions/ChangeDescriptionAction.h"
 #include <set>
 #include <redux/WrappedAction.h>
 
